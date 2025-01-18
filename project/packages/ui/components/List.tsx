@@ -20,7 +20,7 @@ export const List = (props:ListProps) => {
     {props.list.map((item:Pokemon,index:number)=>
     <div className="list-items" key={index}>
      <h4>{item.name}</h4>
-     <button onClick={()=>dispatch(removePokemon(item.name))}>Delete</button>
+     <button onClick={()=>dispatch(removePokemon(item.name))}>Remove</button>
     </div>)}
   </div>
 }
